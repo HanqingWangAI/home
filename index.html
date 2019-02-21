@@ -1,6 +1,6 @@
 ---
 layout: default
-home-title: Welcome.
+home-title: Welcome
 description: I am Hanqing Wang.
 header-img: assets/img/hero.jpg
 ---
@@ -13,10 +13,17 @@ header-img: assets/img/hero.jpg
     style="{% if page.header-img %}background: url({{ page.header-img | prepend: site.baseurl }}) no-repeat center center; background-size: cover;{% endif %}"
 >
     <h2>{{ page.home-title }}</h2>
-    <h3>{{ page.description }}</h3>
+    <p>{{ page.description }}</p>
 </div>
 
 <main class="g-container home-content">
+    <p><font color="red">News!</font> One paper accepted by AAAI 2019 <b>(Oral)</b>.</p>
+    <br><br>
+    <h2>About Me</h2><br>
+    <p>Hi, I am Hanqing Wang - a Ph D candidate of <em>Media Computing and Intelligent Systems Lab, Beijing Institute of Technology - Beijing</em>. I am now advised by Professor <a href="http://iitlab.bit.edu.cn/mcislab/~liangwei/">Wei Liang</a> and Professor <a href="http://teacher.bit.edu.cn/peimt/">Mingtao Pei</a>. We also cooperate with Professor <a href="https://craigyuyu.github.io/home/">Lap-Fai(Carig) Yu</a> - director of <em>Design Computing and Extended Reality Group, George Mason University - Virginia.</em></p>
+    <p>My research interests are Computer Vision/Graphics and Deep Learning.</p>
+    <br>
+    <h2>Publications</h2><br>
     <div class="article-list">
         {% for post in paginator.posts %}
             <article class="article-item">
