@@ -1,9 +1,14 @@
 ---
 layout: post
-title: 'Hello Jekyll'
-date: 2017-04-18
-author: Jekyll
-cover: 'http://on2171g4d.bkt.clouddn.com/jekyll-banner.png'
+title: Deep Single-View 3D Object Reconstruction with Visual Hull Embedding
+date: 2019-02-14
+author: Hanqing Wang
+cover: '/assets/img/posts/3d_recon_19/network.png'
+thumbnail: '/assets/img/posts/3d_recon_19/result.png'
+authors: <strong>Hanqing Wang</strong>, Jiaolong Yang, Wei Liang and Xin Tong
+venue: Proceedings of the AAAI Conference on Artificial Intelligence (AAAI), 2019, <strong>(Oral)</strong>
+paper: https://arxiv.org/pdf/1809.03451.pdf
+code: https://github.com/qweas120/PSVH-3d-reconstruction
 tags: jekyll
 ---
 

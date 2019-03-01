@@ -64,30 +64,59 @@ header-img: assets/img/hero.jpg
     <p><font color="red">News!</font> One paper accepted by AAAI 2019 <b>(Oral)</b>.</p>
     <br><br>
     <h2>About Me</h2><br>
+    <div class="article-list">
     <div class="post-cover">
     <p>Hi, I am Hanqing Wang - a Ph D candidate of <em>Media Computing and Intelligent Systems Lab, Beijing Institute of Technology - Beijing</em>. I am now advised by Professor <a href="http://iitlab.bit.edu.cn/mcislab/~liangwei/">Wei Liang</a> and Professor <a href="http://teacher.bit.edu.cn/peimt/">Mingtao Pei</a>. I also cooperate with Professor <a href="https://craigyuyu.github.io/home/">Lap-Fai(Craig) Yu</a> - director of <em>Design Computing and Extended Reality Group, George Mason University - Virginia.</em></p>
-    <p>My research interests are Computer Vision/Graphics and Deep Learning.</p>
+    <p>My research interests are Computer Vision/Graphics and Machine Learning. </p>
     </div>
     <br>
+    <br>
+    </div>
+    
     <h2>Publications</h2><br>
     <div class="article-list">
         {% for post in paginator.posts %}
             <article class="article-item">
-                {% if post.cover %}
+                <!-- {% if post.cover %}
                 <div class="post-cover">
                     <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}"></a>
                     <img src="{{ post.cover }}" href="{{ post.url | prepend: site.baseurl }}" alt="">
                 </div>
+                {% endif %} -->
+                {% if post.thumbnail %}
+                <section class="post-thumbnail">
+                    <!-- <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}"></a> -->
+                    <img src="{{ post.thumbnail }}" href="{{ post.url | prepend: site.baseurl }}" alt="">
+                </section>
                 {% endif %}
                 <section class="post-preview">
-                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}"></a>
+                    <!-- <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}"></a> -->
+                    <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">
                     <h2 class="post-title">{{ post.title }}</h2>
-                    {% if post.subtitle %}
+                    </a>
+                    {% if post.authors %}
+                    <p class="post-authors">{{ post.authors }}</p>
+                    {% endif %}
+                    <!-- {% if post.subtitle %}
                     <h3 class="post-subtitle">{{ post.subtitle }}</h3>
-                    {% endif %}
-                    {% if post.subtitle.size==0 or post.subtitle==nil %}
+                    {% endif %} -->
+                    <!-- {% if post.subtitle.size==0 or post.subtitle==nil %}
                     <p class="post-excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 126}}</p>
+                    {% endif %} -->
+                    {% if post.venue %}
+                    <p class="post-venue">{{ post.venue}}</p>
                     {% endif %}
+                    <div>
+                        {% if post.paper %}
+                        <a href="{{ post.paper }}">[paper]</a>
+                        {% endif %}
+                        {% if post.code %}
+                        <a href="{{ post.code }}">[code]</a>
+                        {% endif %}
+                        {% if post.slide %}
+                        <a href="{{ post.slide }}">[slide]</a>
+                        {% endif %}
+                    </div>
                 </section>
                 <footer class="post-meta">
                     <div class="post-tags">

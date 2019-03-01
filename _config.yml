@@ -74,6 +74,14 @@ kramdown:
 # RSS
 RSS: false
 
+# # Config sass
+# sass: true
+
+# sass: 
+#     # sass: true
+#     sass_dir: dev/sass
+#     style: compressed
+
 # Permalink
 # See: https://github.com/kaeyleo/jekyll-theme-H2O/issues/35
 permalink: /:year/:month/:day/:title.html
@@ -81,4 +89,4 @@ permalink: /:year/:month/:day/:title.html
 # Plugins
 plugins: [jekyll-paginate]
 
-theme: jekyll-theme-cayman
+# theme: jekyll-theme-cayman

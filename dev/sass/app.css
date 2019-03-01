@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * Jekyll Theme Style
  * - author: liaokeyu (liaokeyu.com)
@@ -199,10 +200,19 @@ a {
     .article-list .article-item .post-cover {
       position: relative;
       width: 100%;
-      max-height: 300px;
+      max-height: 350px;
       margin-bottom: 14px;
       overflow: hidden; }
       .article-list .article-item .post-cover img {
+        width: 100%;
+        vertical-align: middle; }
+    .article-list .article-item .post-thumbnail {
+      max-height: 350px;
+      float: left;
+      margin-right: 10px;
+      overflow: hidden;
+      width: 200px; }
+      .article-list .article-item .post-thumbnail img {
         width: 100%;
         vertical-align: middle; }
     .article-list .article-item .post-preview {
@@ -210,7 +220,7 @@ a {
       .article-list .article-item .post-preview .post-title {
         font-family: "Merriweather", -apple-system, Verdana, "PingFang SC", "Helvetica Neue", "Arial", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
         color: #4E4E4E;
-        font-size: 24px;
+        font-size: 18px;
         line-height: 32px; }
       .article-list .article-item .post-preview .post-subtitle {
         margin-top: 3px;
@@ -218,6 +228,19 @@ a {
         font-weight: normal;
         color: #B8BDC3;
         line-height: 26px; }
+      .article-list .article-item .post-preview .post-authors {
+        margin-top: 3px;
+        font-size: 15px;
+        font-weight: normal;
+        line-height: 26px; }
+      .article-list .article-item .post-preview .post-venue {
+        margin-top: 8px;
+        font-size: 15px;
+        font-family: "Merriweather-Light", -apple-system, Verdana, "PingFang SC", "Helvetica Neue", "Arial", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+        line-height: 26px;
+        font-weight: bold;
+        font-style: oblique;
+        word-break: break-all; }
       .article-list .article-item .post-preview .post-excerpt {
         margin-top: 8px;
         font-size: 16px;
@@ -626,7 +649,7 @@ a {
   padding: 0 0 32px; }
   .markdown-body .highlight {
     margin: 0 0 16px;
-    overflow: scroll; }
+    /** overflow: scroll;  修复代码高亮 显示两个 scroll的问题 **/ }
   .markdown-body img {
     transition: .3s; }
   .markdown-body ul li p, .markdown-body ol li p {
