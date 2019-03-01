@@ -2,8 +2,20 @@
   
     {
       "title"    : "Deep Single-View 3D Object Reconstruction with Visual Hull Embedding",
-      "tags"     : "3Dreconstruction CV",
-      "url"      : "/2019/02/14/hello-jekyll.html"
+      "tags"     : "3D&nbspReconstruction Computer&nbspVision Deep&nbspLearning",
+      "url"      : "/2019/02/14/3d-recon.html"
+    } ,
+  
+    {
+      "title"    : "Transferring Objects: Joint Inference of Container and Human Pose",
+      "tags"     : "Functionality",
+      "url"      : "/2017/03/14/transfer.html"
+    } ,
+  
+    {
+      "title"    : "Joint Labelling and Segmentation for 3D Scanned Human Body",
+      "tags"     : "Semantic&nbspSegmentation Graph&nbspCut",
+      "url"      : "/2016/03/14/labelling.html"
     } 
   
 ]
