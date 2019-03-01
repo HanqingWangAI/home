@@ -83,41 +83,43 @@ header-img: assets/img/hero.jpg
                     <img src="{{ post.cover }}" href="{{ post.url | prepend: site.baseurl }}" alt="">
                 </div>
                 {% endif %} -->
-                {% if post.thumbnail %}
-                <section class="post-thumbnail">
-                    <!-- <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}"></a> -->
-                    <img src="{{ post.thumbnail }}" href="{{ post.url | prepend: site.baseurl }}" alt="">
-                </section>
-                {% endif %}
-                <section class="post-preview">
-                    <!-- <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}"></a> -->
-                    <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">
-                    <h2 class="post-title">{{ post.title }}</h2>
-                    </a>
-                    {% if post.authors %}
-                    <p class="post-authors">{{ post.authors }}</p>
+                <div>
+                    {% if post.thumbnail %}
+                    <section class="post-thumbnail">
+                        <!-- <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}"></a> -->
+                        <img src="{{ post.thumbnail }}" href="{{ post.url | prepend: site.baseurl }}" alt="">
+                    </section>
                     {% endif %}
-                    <!-- {% if post.subtitle %}
-                    <h3 class="post-subtitle">{{ post.subtitle }}</h3>
-                    {% endif %} -->
-                    <!-- {% if post.subtitle.size==0 or post.subtitle==nil %}
-                    <p class="post-excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 126}}</p>
-                    {% endif %} -->
-                    {% if post.venue %}
-                    <p class="post-venue">{{ post.venue}}</p>
-                    {% endif %}
-                    <div>
-                        {% if post.paper %}
-                        <a href="{{ post.paper }}">[paper]</a>
+                    <section class="post-preview">
+                        <!-- <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}"></a> -->
+                        <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">
+                        <h2 class="post-title">{{ post.title }}</h2>
+                        </a>
+                        {% if post.authors %}
+                        <p class="post-authors">{{ post.authors }}</p>
                         {% endif %}
-                        {% if post.code %}
-                        <a href="{{ post.code }}">[code]</a>
+                        <!-- {% if post.subtitle %}
+                        <h3 class="post-subtitle">{{ post.subtitle }}</h3>
+                        {% endif %} -->
+                        <!-- {% if post.subtitle.size==0 or post.subtitle==nil %}
+                        <p class="post-excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 126}}</p>
+                        {% endif %} -->
+                        {% if post.venue %}
+                        <p class="post-venue">{{ post.venue}}</p>
                         {% endif %}
-                        {% if post.slide %}
-                        <a href="{{ post.slide }}">[slide]</a>
-                        {% endif %}
-                    </div>
-                </section>
+                        <div>
+                            {% if post.paper %}
+                            <a href="{{ post.paper }}">[paper]</a>
+                            {% endif %}
+                            {% if post.code %}
+                            <a href="{{ post.code }}">[code]</a>
+                            {% endif %}
+                            {% if post.slide %}
+                            <a href="{{ post.slide }}">[slide]</a>
+                            {% endif %}
+                        </div>
+                    </section>
+                </div>
                 <footer class="post-meta">
                     <div class="post-tags">
                         {% if post.tags.size > 0 %}

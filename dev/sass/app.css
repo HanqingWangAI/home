@@ -36,7 +36,7 @@ ul {
   list-style-type: none; }
 
 a {
-  color: #4E4E4E;
+  color: #2ab0da;
   text-decoration: none;
   cursor: pointer;
   transition: .2s; }
@@ -207,9 +207,9 @@ a {
         width: 100%;
         vertical-align: middle; }
     .article-list .article-item .post-thumbnail {
-      max-height: 350px;
+      height: 250px;
       float: left;
-      margin-right: 10px;
+      margin-right: 20px;
       overflow: hidden;
       width: 200px; }
       .article-list .article-item .post-thumbnail img {

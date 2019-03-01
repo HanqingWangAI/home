@@ -9,7 +9,7 @@ authors: <strong>Hanqing Wang</strong>, Jiaolong Yang, Wei Liang and Xin Tong
 venue: Proceedings of the AAAI Conference on Artificial Intelligence (AAAI), 2019, <strong>(Oral)</strong>
 paper: https://arxiv.org/pdf/1809.03451.pdf
 code: https://github.com/qweas120/PSVH-3d-reconstruction
-tags: jekyll
+tags: "3Dreconstruction CV"
 ---
 
 > Transform your plain text into static websites and blogs.
