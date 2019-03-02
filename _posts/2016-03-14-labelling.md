@@ -3,10 +3,10 @@ layout: post
 title: "Joint Labelling and Segmentation for 3D Scanned Human Body"
 date: 2016-03-14
 author: Hanqing Wang
-cover: '/assets/img/posts/seg_16/heatmap.png'
-thumbnail: '/assets/img/posts/seg_16/framework.png'
+cover: '/assets/files/posts/seg_16/heatmap.png'
+thumbnail: '/assets/files/posts/seg_16/framework.png'
 authors: <strong>Hanqing Wang</strong>, Changyang Li, Zikai Gao and Wei Liang
-venue: 'SIGGRAPH ASIA 2016 Virtual Reality meets Physical Reality: Modelling and Simulating Virtual Humans and Environments'
+venue: 'SIGGRAPH ASIA 2016 Virtual Reality meets Physical Reality Workshop'
 paper: http://sigvr.org/hanqing.pdf
 # code: https://github.com/qweas120/PSVH-3d-reconstruction
 tags: "Semantic&nbspSegmentation Graph&nbspCut"
