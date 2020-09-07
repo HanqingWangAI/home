@@ -1,6 +1,18 @@
 [
   
     {
+      "title"    : "Scene Mover: Automatic Move Planning for Scene Arrangement by Deep Reinforcement Learning",
+      "tags"     : "Scene&nbspArrangement Reinforcement&nbspLearning MCTS",
+      "url"      : "/2020/07/30/mover.html"
+    } ,
+  
+    {
+      "title"    : "Active Visual Information Gathering for Vision-Language Navigation",
+      "tags"     : "Embodied&nbspVision Computer&nbspVision Vision-Language&nbspNavigation",
+      "url"      : "/2020/07/04/active.html"
+    } ,
+  
+    {
       "title"    : "Deep Single-View 3D Object Reconstruction with Visual Hull Embedding",
       "tags"     : "3D&nbspReconstruction Computer&nbspVision Deep&nbspLearning",
       "url"      : "/2019/02/14/3d-recon.html"
